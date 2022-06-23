@@ -11,78 +11,137 @@
     <div class="container">
         <!-- header -->
         <header>
-            <h1 id="title"> Form</h1>
-            <p id="description">only lil form</p>
+            <h1 id="title" class="text-center"> Communication Form</h1>
+            <p id="description" class="text-center">
+                form to know more about you</p>
         </header>
         <!-- form -->
         <form id="survey-form">
             <!-- name -->
-            <div class="form-group">
+            <div class="form-part">
                 <label id="name-label" for="name">name</label>
                 <input class="form-control" id="name" name="name" type="text" required placeholder="enter your name">
             </div>
             <!-- email -->
-            <div class="form-group">
+            <div class="form-part">
                 <label id="email-label" for="email">email</label>
                 <input id="email" name="email" type="email" placeholder="enter your email" required>
             </div>
             <!-- age -->
-            <div class="form-group">
+            <div class="form-part">
                 <label id="number-label" for="age">age(optional)</label>
                 <input id="number" name="age" type="number" min="7" max="110" placeholder="your age">
             </div>
-            <!-- role -->
-            <div class="form-group">
-                <p>Which option best describes your current role?</p>
+            <!-- children -->
+            <div class="form-part">
+                <p> how many children do you have?</p>
                 <select id="dropdown" name="role" class="form-control" required>
                     <option disabled selected value=""></option>
-                    <option value="student">Student</option>
-                    <option value="job">Full Time job</option>
-                    <option value="learner">Full Time Learner</option>
-                    <option value="other">Other</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="more-two">3+</option>
+                    <option value="zero">0</option>
                 </select>
             </div>
-            <!-- recommend -->
-            <div class="form-group">
-                <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>"definitely"</label>
-                <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" checked>"maybe"</label>
-                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" checked>"not sure"</label>
-            </div>
-            <!-- most like -->
-            <div class="form-group">
-                <p>What is your favorite feature of freeCodeCamp?</p>
-                <select id="most-like" name="mostlike" class="form-cntrol" required>
-                    <option disabled selected value="">Select an option</option>
-                    <option value="challenges">Challenges</option>
-                    <option value="projects">Projects</option>
-                    <option value="community">Community</option>
-                </select>
-            </div>
-            <!-- check all -->
-            <div class="form-group">
+            <!-- hobby  -->
+            <div class="form-part">
+                <p>What do you like to do in your free time?</p>
+                <label><input name="user-recommend" value="movies" type="radio" class="input-radio" checked>"movies and series"</label>
+                <label><input name="user-recommend" value="games" type="radio" class="input-radio" checked>"games"</label>
+                <label><input name="user-recommend" value="books" type="radio" class="input-radio" checked>"read books"</label>
+                <label><input name="user-recommend" value="others" type="radio" class="input-radio" checked>"others"</label>
+            </div>   
+            <!-- countries-->
+            <div class="form-part">
                 <p>
-                    What would you like to see improved?
-                    <span class="clue">(Check all that apply)</span>
+                    Which countries are you interested in living or visiting? (Check all that apply)
                 </p>
+      
+                <label
+                  ><input
+                    name="prefer"
+                    value="Brazil"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Brazil</label
+                >
                 <label>
-                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects
+                  <input
+                    name="prefer"
+                    value="France"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />
+                  France</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Spain"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Spain</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="China"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />
+                  China</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Italy"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Italy
+                  </label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="Germany"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Germany</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="thailand"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />thailand
+                  </label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="UK"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />UK
                 </label>
-                <label>
-                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
-                </label>
-                <label>
-                    <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization
-                </label>
-            </div>
 
+                <label
+                  ><input
+                    name="prefer"
+                    value="othes"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />others
+                </label>
+              </div>
             <!-- text area -->
-            <div class="form-group">
-                    <p>Any comments or suggestions?</p>
-                    <textarea id="comments" class="input-texarea" name="comment" placeholder="Enter your comment here..."> </textarea>
+            <div class="form-part">
+                    <p> write something about you.</p>
+                    <textarea id="testinhos" class="input-textarea" name="textinho" placeholder="Enter about you..."> </textarea>
             </div>
             <!-- submit button  -->
-            <did class="form-group">
+            <did class="form-part">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
             </did>
         </form>
