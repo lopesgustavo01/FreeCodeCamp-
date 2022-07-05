@@ -1,12 +1,4 @@
-/* Custom properties and variables colors  */
-:root {
-    --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
-}
-  
-  /* Base reset */
+ /* Base reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,18 +13,9 @@
 /* definir comportamento, tamanho de font e mudar scroll */
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+    font-size: 10px;
 }
 
-/* quanto atingir 75em font reduz */
-@media (max-width: 75em) {
-    html {
-      font-size: 60%;
-    }
-}
-  
-/* quando atingir 61.25em font reduz */
 @media (max-width: 61.25em) {
     html {
       font-size: 58%;
